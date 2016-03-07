@@ -534,7 +534,8 @@ L.Mixin.Events.fire = L.Mixin.Events.fireEvent;
 	    any3d = !window.L_DISABLE_3D && (ie3d || webkit3d || gecko3d || opera3d) && !phantomjs;
 
 	var touch = !window.L_NO_TOUCH && !phantomjs && (pointer || 'ontouchstart' in window ||
-		(window.DocumentTouch && document instanceof window.DocumentTouch));
+	(window.navigator.maxTouchPoints > 0) || (window.navigator.msMaxTouchPoints > 0) ||
+  (window.DocumentTouch && document instanceof window.DocumentTouch));
 
 	L.Browser = {
 		ie: ie,
