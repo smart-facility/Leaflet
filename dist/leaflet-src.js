@@ -533,7 +533,7 @@ L.Mixin.Events.fire = L.Mixin.Events.fireEvent;
 	    opera3d = 'OTransition' in doc.style,
 	    any3d = !window.L_DISABLE_3D && (ie3d || webkit3d || gecko3d || opera3d) && !phantomjs;
 
-	var touch = !window.L_NO_TOUCH && !phantomjs && (pointer || 'ontouchstart' in window ||
+	var touch = !window.L_NO_TOUCH && !phantomjs && ('ontouchstart' in window ||
 	(window.navigator.maxTouchPoints > 0) || (window.navigator.msMaxTouchPoints > 0) ||
   (window.DocumentTouch && document instanceof window.DocumentTouch));
 
