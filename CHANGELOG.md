@@ -3,6 +3,10 @@ Leaflet Changelog
 
 (all changes without author notice are by [@mourner](https://github.com/mourner))
 
+## Patch to 0.7.7 (March 8, 2016)
+
+* Updated IE touch detection to ignore pointer and use [msMaxTouchPoints (pre-IE11)](https://msdn.microsoft.com/library/hh673557%28v=vs.85%29.aspx) and [maxTouchPoints (11+)](https://msdn.microsoft.com/en-au/library/hh772144%28v=vs.85%29.aspx) as per IE dev docs as linked (by [@matthewberryman](https://github.com/matthewberryman)).
+
 ## 0.7.7 (October 26, 2015)
 
 * Fixed a regression that could sometimes cause tiles to disappear when pinch-zooming on iOS devices.
